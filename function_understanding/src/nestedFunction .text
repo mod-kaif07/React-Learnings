@@ -1,0 +1,30 @@
+import React from "react";
+
+const App = () => {
+  function trackchnage(val) {
+    console.log(val);
+  }
+
+  return (
+    <>
+      <label htmlFor="name">Your Name:</label>
+      <input
+        id="name"
+        className="ii"
+        type="text"
+        onChange={(elem) => {
+          let val = elem.target.value;
+          trackchnage(val);
+        }}
+        placeholder="Write something..."
+      />
+    </>
+  );
+};
+
+export default App;
+
+
+
+note:------------
+in this nested function we can pass the value , in a function we create function for auto execuation , anf help to pass the value to working function(trackchnage)

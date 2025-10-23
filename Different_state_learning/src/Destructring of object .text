@@ -1,0 +1,29 @@
+import React, { useState } from "react";
+
+const App = () => {
+  const [user, setUser] = useState({ username: "kaif", age: 21 });
+
+  function change_data() {
+    // setUser({ username: "saif", age: 18 });
+    // console.log(user);
+
+     const newuser={...user};
+     newuser.username="saif";
+     newuser.age=18;
+     setUser(newuser);
+     console.log(user)
+  }
+
+  return (
+    <div className="parent">
+      <div className="display">
+        Username: {user.username} & age:{user.age}
+      </div>
+      <div className="btn">
+        <button onClick={change_data}>Increase</button>
+      </div>
+    </div>
+  );
+};
+
+export default App;

@@ -1,0 +1,63 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ font-family: "Poppins", sans-serif;
+}
+
+.display {
+  font-size: 80px;
+  font-weight: bold;
+  color: #222;
+  background-color: #fff;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.display:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+.btn{
+  display: flex;
+}

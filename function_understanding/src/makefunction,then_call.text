@@ -1,0 +1,27 @@
+import React from "react";
+
+const App = () => {
+  function btnclicked() {
+    console.log("Button is Clicked !!!");
+  }
+  function rightclicked(){
+     console.log("Right clicked on this  !!!");
+  }
+  return (
+    <div>
+      <h1 className="heading ">Function Understanding </h1>
+      <button onMouseEnter={rightclicked} onClick={btnclicked}>Click me </button>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+To, abhi hum React mein function ko call karne ke baare mein seekh rahe hain.
+Hum function ko define karte hain aur phir return statement mein use tag ke andar include karte hain.
+Ise hum turant call nahi karte; bas call  karne se hi wo apne aap execute ho jata hai.
+Function ko return value se upar define kiya jata hai, aur hum use zarurat ke anusar use karte hain.
+Use turant call nahi karte, balki kisi event ke baad, jaise click ya double-click, tab wo execute hota hai.
+Is tarah se aap ise baad mein aasani se revise kar sakoge
